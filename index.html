@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./public/images/icon.png" />
+    <!-- CSS FILES-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="css/style-switcher.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- main container Start-->
+    <div class="main-container">
+        <!--aside Start   -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>M</span>esho <span>E</span>lbeh</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!--aside end   -->
+
+
+        <!-- Main content Start  -->
+        <div class="main-contant">
+            <!-- home section  Start -->
+            <section class="section home active " id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info">
+                            <h3 class="hello">Hello, my name is <span class="name">Tony Mesho Elbeh</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing"> </span></h3>
+                            <p>
+                                As a <b>software engineering </b> graduate, I've dedicated myself to mastering the craft through academic study and practical projects. I've gained experience in various aspects of software development, from designing user interfaces to optimizing code efficiency. Through professional experiences and collaborative projects, I've honed my skills in real-world coding environments. I'm enthusiastic about leveraging my expertise to contribute meaningfully to programming projects and continuing to grow as a professional in the field.
+ </p>
+                            <div style="display: flex;justify-content: center;"><a href="./public/Tony-Mesho-Elbeh.pdf" class="btn " download>Download CV</a></div>
+                            <div class="home-sci">
+                                <a href="https://www.facebook.com/tony.mesho" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tony-mesho-elbeh-3b48002b3/" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                                <!-- <a href="https://github.com/toony55" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a> -->
+
+                            </div>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="public/images/photo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home section  end -->
+            <!-- About section  Start -->
+            <section class="about section " id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Tony Mesho Elbeh and I'm a <span class="typing">Software Engineer </span></h3>
+                                    <p>
+                                        As a 𝐬𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 graduate with a strong foundation in various programming languages, I have honed my skills through academic projects and hands-on experiences. My aim is to apply my technical knowledge and problem-solving abilities to contribute effectively in a dynamic and innovative workplace.                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday : <span>01 Dec 2001</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span id="age"></span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>tonymeshoelbeh@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>Bachelor of Software Engineering</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>(+971) 0542146337</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Country : <span>UAE</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance : <span>Available</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>Abu Dhabi</span></p>
+                                        </div>
+                           
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <!-- <a href="#" class="btn">Download CV</a> -->
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Contact ME</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <section class="skills" id="skills">
+                                <h2 class="skill-header">My Top Skills</h2>
+                            
+                                <div class="skills-wrapper">
+                                    <div class="first-set animate__animated animate__pulse">
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/python.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <div class="icon-text-container">
+                                                <span class="icon-text">Python</span>
+                                            </div>
+                                        </div>                                        
+                                        
+                            
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/django.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">Django</span>
+                                        </div>
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/php.svg" width="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">PHP</span>
+                                        </div>
+
+                            
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/mysql.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">MySQL</span>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="second-set animate__animated animate__pulse">
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/react.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">ReactJS</span>
+                                        </div>
+                            
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/laravel.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">Laravel</span>
+                                        </div>
+                                        <div class="icon-container">
+                                            <img src="./public/images/icons/api.png" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">REST API</span>
+                                        </div>
+                            
+                                       <div class="icon-container">
+                                            <img src="./public/images/icons/Git.svg" alt="" loading="lazy" class="icon icon-card" />
+                                            <span class="icon-text">Git</span>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- Timeline item start -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2018 - 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor's degree of Informatics Engineering / Software Engineering and Information Systems
+                                                    </h4>
+                                                    <h2>
+                                                        <span style="font-size: 12px; color: #666666;"><i class="fa fa-map-marker" style="margin-right: 5px;"></i></span>
+                                                        <span style="font-size: 15px; color: var(--skin-color);">AL-BAATH University</span> <span style="color: #666666; font-size: 15px;">Homs, Syria</span>
+
+                                                    </h2>
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    
+                                    <!-- project in Al-Baath University and Training in a company  -->
+                                    <div class="row">
+                                        
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <h2 class="title" id="freelance-projects" >Freelance Projects</h2>
+                                                <!-- Timeline item start -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022 - 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">E-commerce Website
+                                                    </h4>
+                                                    <p class="timeline-text">Led the development process of an E-commerce Website,
+                                                        leveraging React for the client‑side and Django for the
+                                                        server‑side architecture.
+                                                        Implemented advanced features such as real‑time chat
+                                                        functionality using WebSocket technology and sentiment
+                                                        analysis functionality to analyze user interactions, enhancing
+                                                        the platform's understanding of user sentiment and
+                                                        preferences.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline item end -->
+                                                <!-- Timeline item start -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022 - 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Healthcare Platform
+                                                    </h4>
+                                                    <p class="timeline-text">Created an all-encompassing healthcare management platform utilizing React for client‑side and php Laravel for server-side. Integrated features such as appointment booking, electronic health records maintenance, and intuitive access to patient and physician data. Diagnosed and fixed code inefficiencies, resulting in enhanced system performance.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline item end -->
+
+
+
+
+                                                <!-- Timeline item start -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Car Rental System
+                                                    </h4>
+                                                    <p class="timeline-text">Developed a comprehensive Car Rental System
+                                                        using React and Python Django with RESTful API.
+                                                        Enabled functionalities including fine payment processing, insurance options, and user-friendly access to
+                                                        vehicle and license information.
+                                                        Identified and resolved code bottlenecks, leading to improved
+                                                        software performance.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline item end -->
+                                                <!-- Timeline item start -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Travel Agency
+                                                    </h4>
+                                                    <p class="timeline-text">Built an extensive travel agency management platform using React for client‑side and php Laravel for server-side. Incorporated features such as booking reservations, itinerary planning, and easy access to travel and accommodation details. Implemented robust security measures to protect user data and ensure a seamless experience.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline item end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section  end -->
+            <!-- Services  section  Start -->
+            <section class="service section " id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Services item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Backend Developer</h4>
+                                <p>Skilled in Python for server-side development. Optimize software performance, resolve bottlenecks, and ensure application reliability.</p>
+                            </div>
+                        </div>
+                        <!-- Services item end -->
+
+                        <!-- Services item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Frontend Developer</h4>
+                                <p>Proficient in HTML, CSS, JavaScript and React. Develop user-friendly applications for enhanced efficiency and seamless integration.</p>
+                            </div>
+                        </div> 
+                        <!-- Services item end -->
+
+                        <!-- Services item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Software Performance Optimization</h4>
+                                <p>Identify and resolve performance bottlenecks, optimize websites, and mobile applications for peak performance.</p>
+                            </div>
+                        </div>
+                        <!-- Services item end -->
+
+                        <!-- Services item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <h4>API Development</h4>
+                                <p>Facilitate seamless integrations between diverse systems through effective API development.</p>
+                            </div>
+                        </div>
+                        <!-- Services item end -->
+
+                        <!-- Services item Start -->
+
+                        <!-- Services item end -->
+                        <!-- Services item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <h4>Database Management</h4>
+                                <p>Expertise in designing and managing databases, ensuring efficient data storage, retrieval, and seamless integration with applications.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <h4>Continuous Learning Advocate</h4>
+                                <p>Dedicated to staying updated on emerging technologies, applying innovative solutions, and growing as a versatile and skilled developer.</p>
+                            </div>
+                        </div>
+
+                        <!-- Services item end -->
+                    </div>
+                </div>
+            </section>
+            <!-- Services  section  end -->
+            <!-- Portfolio  section  Start -->
+            <section class="portfolio section " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects :</h2>
+                        </div>
+                    </div> -->
+                    <div id="top"></div>
+                    <section class="gallery">
+                        <div class="row">
+                            <ul>
+                                <a href="#" class="close"></a>
+                                <li>
+                                    <a href="#Ecommerce-Website">
+                                        <img src="public/images/projects/E-coomerce/Base-photo.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#Healthcare-Platform">
+                                        <img src="public/images/projects/healthcare/Base-photo.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#Car-Rental-System">
+                                        <img src="public/images/projects/Cars Rental/Base-photo.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="image" href="#Travel-Agency">
+                                        <img src="public/images/projects/travel/Base-photo.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="Ecommerce-Website" class="port">
+
+                            <div class="row">
+                                <div class="description">
+                                    <h1>E-commerce Website</h1>
+                                    <p><span style="color: var(--skin-color);">-</span> Your ultimate destination for all your shopping needs. <br><span style="color: var(--skin-color);">-</span> Utilized HTML, CSS, JavaScript and React for frontend development, and Python-Django for backend functionality.</p>
+                                </div>
+
+
+                                <div class="center">
+                                    <div class="carousel-wrapper">
+                                        <!-- abstract radio buttons for slides -->
+                                        <input id="slide1-1" type="radio" name="controls1" checked="checked" />
+                                        <input id="slide2-1" type="radio" name="controls1" />
+                                        <input id="slide3-1" type="radio" name="controls1" />
+                                        <input id="slide4-1" type="radio" name="controls1" />
+                                        <input id="slide5-1" type="radio" name="controls1" />
+
+                                        <!-- navigation dots -->
+                                        <label for="slide1-1" class="nav-dot"></label>
+                                        <label for="slide2-1" class="nav-dot"></label>
+                                        <label for="slide3-1" class="nav-dot"></label>
+                                        <label for="slide4-1" class="nav-dot"></label>
+                                        <label for="slide5-1" class="nav-dot"></label>
+
+                                        <!-- arrows -->
+                                        <label for="slide1-1" class="left-arrow">
+                                        < </label>
+                                        <label for="slide2-1" class="left-arrow">
+                                            < </label>
+                                        <label for="slide3-1" class="left-arrow">
+                                                < </label>
+                                        <label for="slide4-1" class="left-arrow">
+                                                    < </label>
+                                        <label for="slide5-1" class="left-arrow">
+                                                    < </label>
+
+
+
+                                        <label for="slide1-1" class="right-arrow"> > </label>
+                                        <label for="slide2-1" class="right-arrow"> > </label>
+                                        <label for="slide3-1" class="right-arrow"> > </label>
+                                        <label for="slide4-1" class="right-arrow"> > </label>
+                                        <label for="slide5-1" class="right-arrow"> > </label>
+
+                                        <div class="carousel">
+                                            <ul>
+                                                <li>
+                                                    <img src="public/images/projects/E-coomerce/slider-1.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="public/images/projects/E-coomerce/slider-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="public/images/projects/E-coomerce/slider-3.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="public/images/projects/E-coomerce/Silder-4.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="public/images/projects/E-coomerce/Slider-5.png" alt="" />
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Healthcare-Platform" class="port">
+
+                            <div class="row">
+                                <div class="description">
+                                    <h1>Healthcare Platform</h1>
+                                    <p><span style="color: var(--skin-color);">-</span> A digital system designed to facilitate various aspects of healthcare delivery, management, and coordination. It serves as a centralized hub where patients, healthcare providers, administrators, and other stakeholders can interact, access information, and perform tasks related to healthcare services. 
+                                        <br><span style="color: var(--skin-color);">-</span> Developed using HTML, CSS, JavaScript and React for frontend development, and PHP-Laravel for backend functionality.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="center">
+                                    <div class="carousel-wrapper">
+                                        <!-- abstract radio buttons for slides -->
+                                        <input id="slide1-2" type="radio" name="controls2" checked="checked" />
+                                        <input id="slide2-2" type="radio" name="controls2" />
+                                        <input id="slide3-2" type="radio" name="controls2" />
+                                        <input id="slide4-2" type="radio" name="controls2" />
+                                        <input id="slide5-2" type="radio" name="controls2" />
+
+                                        <!-- navigation dots -->
+                                        <label for="slide1-2" class="nav-dot"></label>
+                                        <label for="slide2-2" class="nav-dot"></label>
+                                        <label for="slide3-2" class="nav-dot"></label>
+                                        <label for="slide4-2" class="nav-dot"></label>
+                                        <label for="slide5-2" class="nav-dot"></label>
+
+                                        <!-- arrows -->
+                                        <label for="slide1-2" class="left-arrow">
+                                        < </label>
+                                        <label for="slide2-2" class="left-arrow">
+                                            < </label>
+                                        <label for="slide3-2" class="left-arrow">
+                                                < </label>
+                                        <label for="slide4-2" class="left-arrow">
+                                                    < </label>
+                                        <label for="slide5-2" class="left-arrow">
+                                                    < </label>
+
+
+
+
+                                        <label for="slide1-2" class="right-arrow"> > </label>
+                                        <label for="slide2-2" class="right-arrow"> > </label>
+                                        <label for="slide3-2" class="right-arrow"> > </label>
+                                        <label for="slide4-2" class="right-arrow"> > </label>
+                                        <label for="slide5-2" class="right-arrow"> > </label>
+
+                                        <div class="carousel">
+                                            <ul>
+                                                <li>
+                                                    <img src="/public/images/projects/healthcare/slider-1.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/healthcare/slider-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/healthcare/slider-3.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/healthcare/slider-4.png">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/healthcare/Slider-5.png">
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Car-Rental-System" class="port">
+
+                            <div class="row">
+                                <div class="description">
+                                    <h1>Car Rental System</h1>
+                                    <p><span style="color: var(--skin-color);">-</span> A platform designed to facilitate the rental of vehicles to customers for short-term use. The system enables customers to browse available vehicles, select their desired rental dates, make reservations, and complete
+                                        transactions online. For rental companies, it streamlines the process of managing vehicle inventory, tracking reservations, processing payments, and ensuring a smooth rental experience for customers.
+                                         <br><span style="color: var(--skin-color);">-</span> Utilized HTML,CSS, JavaScript and React for frontend development, and Python-Django for backend functionality.
+                                       </p>
+
+                                </div>
+
+
+                                <div class="center">
+                                    <div class="carousel-wrapper">
+                                        <!-- abstract radio buttons for slides -->
+                                        <input id="slide1-3" type="radio" name="controls3" checked="checked" />
+                                        <input id="slide2-3" type="radio" name="controls3" />
+                                        <input id="slide3-3" type="radio" name="controls3" />
+                                        <input id="slide4-3" type="radio" name="controls3" />
+                                        <input id="slide5-3" type="radio" name="controls3" />
+
+                                        <!-- navigation dots -->
+                                        <label for="slide1-3" class="nav-dot"></label>
+                                        <label for="slide2-3" class="nav-dot"></label>
+                                        <label for="slide3-3" class="nav-dot"></label>
+                                        <label for="slide4-3" class="nav-dot"></label>
+                                        <label for="slide5-3" class="nav-dot"></label>
+
+                                        <!-- arrows -->
+                                        <label for="slide1-3" class="left-arrow">
+                                        < </label>
+                                        <label for="slide2-3" class="left-arrow">
+                                            < </label>
+                                        <label for="slide3-3" class="left-arrow">
+                                                < </label>
+                                        <label for="slide4-3" class="left-arrow">
+                                                    < </label>
+                                        <label for="slide5-3" class="left-arrow">
+                                                    < </label>
+
+
+
+                                        <label for="slide1-3" class="right-arrow"> > </label>
+                                        <label for="slide2-3" class="right-arrow"> > </label>
+                                        <label for="slide3-3" class="right-arrow"> > </label>
+                                        <label for="slide4-3" class="right-arrow"> > </label>
+                                        <label for="slide5-3" class="right-arrow"> > </label>
+
+                                        <div class="carousel">
+                                            <ul>
+                                                <li>
+                                                    <img src="/public/images/projects/Cars Rental/slider-1.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/Cars Rental/slider-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/Cars Rental/slider-3.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/Cars Rental/slider-4.png">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/Cars Rental/Slider-5.png">
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Travel-Agency" class="port">
+
+                            <div class="row">
+                                <div class="description">
+                                    <h1>Travel Agency
+                                    </h1>
+                                    <p><span style="color: var(--skin-color);">-</span>Making unforgettable travel experiences for you. From dreamy vacations to seamless business trips, handling all aspects of trip planning and booking. 
+                                        <br><span style="color: var(--skin-color);">-</span>Developed using HTML, CSS, JavaScript and React for frontend development,
+                                        and PHP-Laravel for backend functionality</p>
+
+                                </div>
+
+
+                                <div class="center">
+                                    <div class="carousel-wrapper">
+                                        <!-- abstract radio buttons for slides -->
+                                        <input id="slide1-4" type="radio" name="controls4" checked="checked" />
+                                        <input id="slide2-4" type="radio" name="controls4" />
+                                        <input id="slide3-4" type="radio" name="controls4" />
+                                        <input id="slide4-4" type="radio" name="controls4" />
+                                        <input id="slide5-4" type="radio" name="controls4" />
+
+                                        <!-- navigation dots -->
+                                        <label for="slide1-4" class="nav-dot"></label>
+                                        <label for="slide2-4" class="nav-dot"></label>
+                                        <label for="slide3-4" class="nav-dot"></label>
+                                        <label for="slide4-4" class="nav-dot"></label>
+                                        <label for="slide5-4" class="nav-dot"></label>
+
+                                        <!-- arrows -->
+                                        <label for="slide1-4" class="left-arrow">
+                                        < </label>
+                                        <label for="slide2-4" class="left-arrow">
+                                            < </label>
+                                        <label for="slide3-4" class="left-arrow">
+                                                < </label>
+                                        <label for="slide4-4" class="left-arrow">
+                                                < </label>
+                                        <label for="slide5-4" class="left-arrow">
+                                                < </label>
+
+
+
+                                        <label for="slide1-4" class="right-arrow"> > </label>
+                                        <label for="slide2-4" class="right-arrow"> > </label>
+                                        <label for="slide3-4" class="right-arrow"> > </label>
+                                        <label for="slide4-4" class="right-arrow"> > </label>
+                                        <label for="slide5-4" class="right-arrow"> > </label>
+
+                                        <div class="carousel">
+                                            <ul>
+                                                <li>
+                                                    <img src="/public/images/projects/travel/slider-1.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/travel/slider-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/travel/slider-3.png" />
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/travel/Slider-4.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="/public/images/projects/travel/Slider-5.png" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- / projects -->
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </section>
+                    <!-- / projects -->
+
+                </div>
+
+            </section>
+            <!-- Portfolio  section  end -->
+
+            <!-- Contact  section  Start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15 ">Have You Any Question ?</h3>
+                    <!-- contact info  Start -->
+                    <div class="row">
+                        <!-- contact info item Start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call Me On</h4>
+                            <p>(+971) 0542146337</p>
+                        </div>
+                        <!-- contact info item end -->
+                        <!-- contact info item Start -->
+                        <!-- <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Office</h4>
+                            <p>Homs</p>
+                        </div> -->
+                        <!-- contact info item end -->
+                        <!-- contact info item Start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>tonymeshoelbeh@gmail.com</p>
+                        </div>
+                        <!-- contact info item end -->
+                        <!-- contact info item Start -->
+                        <!-- <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i>
+                            </div>
+                            <h4>Website</h4>
+                            <p>www.domain.com</p>
+                        </div> -->
+                        <!-- contact info item end -->
+                    </div>
+                    <!-- contact info end -->
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <!--  start contact form -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Name">
+                                        <p class="error-message padd-15" id="nameError"></p>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email">
+                                        <p class="error-message padd-15" id="emailError"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                        <p class="error-message padd-15" id="subjectError"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="" placeholder="Meessage" cols="30" rows="10"></textarea>
+                                        <p class="error-message padd-15" id="messageError"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" onclick="submitForm()" class=" btn ">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end contact form -->
+                </div>
+            </section>
+            <!-- Contact  section  end -->
+        </div>
+        <!-- Main content end  -->
+    </div>
+    <!-- main container end-->
+    <!--style switcher Start  -->
+    <div class="style-switcher ">
+        <div class="style-switcher-toggler s-icon ">
+            <i class="fas fa-cog fa-spin "></i>
+        </div>
+        <div class="day-night s-icon ">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme colors</h4>
+        <div class="colors ">
+            <span class="color-1 " onclick="setActiveStyle( 'color-1') "></span>
+            <span class="color-2 " onclick="setActiveStyle( 'color-2') "></span>
+            <span class="color-3 " onclick="setActiveStyle( 'color-3') "></span>
+            <span class="color-4 " onclick="setActiveStyle( 'color-4') "></span>
+            <span class="color-5 " onclick="setActiveStyle( 'color-5') "></span>
+        </div>
+    </div>
+    <!--style switcher End  -->
+    <!-- JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js "></script>
+    <script src="js/script.js "></script>
+    <script src="js/birthday.js"></script>
+    <script src="js/style-switcher.js "></script>
+    <script src="js/mail.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>
